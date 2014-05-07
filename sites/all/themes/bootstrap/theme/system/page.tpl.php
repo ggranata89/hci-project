@@ -113,8 +113,13 @@
   </div>
 </header>
 
-<div class="main-container container">
+<?php if ($page['featured']): ?>
+  <div class="featured">
+    <?php print render($page['featured']); ?>
+  </div> <!-- /.featured -->
+<?php endif; ?>
 
+<div class="main-container container">
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
       <p class="lead"><?php print $site_slogan; ?></p>

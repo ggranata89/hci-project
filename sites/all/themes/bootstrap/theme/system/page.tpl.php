@@ -73,6 +73,20 @@
  * @ingroup themeable
  */
 ?>
+
+<?php if ($page['featured']): ?>
+  <div class="featured">
+    <?php print render($page['featured']); ?>
+  </div> <!-- /.featured -->
+<?php endif; ?>
+
+<?php if ($page['top_a']): ?>
+  <div class="top_a">
+    <?php print render($page['top_a']); ?>
+  </div> <!-- /.top_a -->
+<?php endif; ?>
+
+
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="container">
     <div class="navbar-header">
@@ -112,12 +126,6 @@
     <?php endif; ?>
   </div>
 </header>
-
-<?php if ($page['featured']): ?>
-  <div class="featured">
-    <?php print render($page['featured']); ?>
-  </div> <!-- /.featured -->
-<?php endif; ?>
 
 <div class="main-container container">
   <header role="banner" id="page-header">

@@ -132,6 +132,12 @@
   </div> <!-- /carosello -->
 <?php endif; ?>
 
+	<?php if ($page['top_b']): ?>
+  <div class="top_b">
+    <?php print render($page['top_b']); ?>
+  </div> <!-- /top_b -->
+<?php endif; ?>
+
 
 
 <div class="main-container container">
